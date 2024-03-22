@@ -1,4 +1,4 @@
-print_task_heading() {
+print_task_Heading() {
   echo $1
   echo "########## $1 ##########" &>>/tmp/expense.log
 }
@@ -8,5 +8,5 @@ Check_Status() {
     echo SUCCESS
     else
       echo FAILURE
-      fi
+  fi
 }
