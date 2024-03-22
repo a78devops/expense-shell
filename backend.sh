@@ -46,7 +46,6 @@ cd /app &>>/tmp/expense.log
 unzip /tmp/backend.zip &>>/tmp/expense.log
 check_status $?
 
-
 print_task_heading "download NodeJS dependencies"
 cd /app &>>/tmp/expense.log
 npm install &>>/tmp/expense.log
@@ -65,3 +64,4 @@ check_status $?
 print_task_heading "load schema"
 mysql -h 172.31.8.205 -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>/tmp/expense.log
 check_status $?
+
