@@ -1,9 +1,9 @@
-print_task_Heading() {
+print_task_heading() {
   echo $1
   echo "########## $1 ##########" &>>/tmp/expense.log
 }
 
-Check_Status() {
+check_status() {
   if [ $1 -eq 0 ]; then
     echo -e "\e[32mSUCCESS\e[0m"
     else
