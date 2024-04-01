@@ -32,3 +32,4 @@ app_prereq() {
  unzip /tmp/${component}.zip &>>$log
  check_status $?
 }
+
